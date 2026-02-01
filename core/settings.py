@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-76@w$x#d(t-2f#bm*!l7dmv@*1%7-vkghvgyx0_0r(wafn6d%w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['PinkLashes.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django_resized',
     'phonenumber_field',
     'rest_framework',
-    'django_filters'
+    'django_filters',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
