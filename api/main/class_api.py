@@ -1,6 +1,5 @@
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
-from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
-from rest_framework.pagination import PageNumberPagination
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
 from .paginations import StandardResultsSetPagination
 from main.models import TypeOfService, Service, Master, Review, Gallery, SignUp

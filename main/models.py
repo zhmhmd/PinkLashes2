@@ -41,7 +41,7 @@ class Master(models.Model):
     )
     name = models.CharField("Название", max_length=150)
     position = models.CharField("Позиция", max_length=20, choices=POSITION_CHOICES, default="master")
-    experience = models.IntegerField("Опыт", max_length=50)
+    experience = models.IntegerField("Опыт")
     description = models.TextField("Описание", max_length=1500)
     telegramm = models.URLField("Телеграм", null=True, blank=True)
     instagram = models.URLField("Инстаграм", null=True, blank=True)
